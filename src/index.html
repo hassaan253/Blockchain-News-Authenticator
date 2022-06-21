@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="#">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Legitify</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container" style="width: 700px;">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="text-center"> Legitify</h1>
+          <hr/>
+          <br/>
+           
+		 <a href="dashboard.html">Dashboard</a>
+     <a href="registration.html">Registration</a>
+     <a href="registration.html">Registration</a>
+     <a href="try.html">try</a>
+<h6>Current Date and Time: <span id="time"></span> </h6>
+
+
+  <div class="container" style="width: 650px;">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1 class="text-center"> Legitify</h1>
+        <hr/>
+        <br/>
+        <div id="loader">
+          <p class="text-center">Loading...</p>
+        </div>
+        <div id="content" style="display: none;">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">UpVote</th>
+   <th scope="col">DownVote</th> 
+              </tr>
+            </thead>
+            <tbody id="newsResults">
+            </tbody>
+          </table>
+      
+          <p id="accountAddress" class="text-center"></p>
+          <p id="accountPoints" class="text-center"></p>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+<script type="text/javascript" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+<script type="text/javascript" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+ 
+  
+</html>
+<script> 
+var datetime = new Date();
+console.log(datetime);
+document.getElementById("time").textContent = datetime; //it will print on html page
+
+
+</script>

@@ -1,0 +1,24 @@
+{
+  "name": "legitify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "dev": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  },
+  "dependencies": {
+    "browser-sync": "^2.27.9",
+    "ethers": "^4.0.0",
+    "piping": "^1.0.0-rc.4",
+    "web3": "^1.7.3"
+  }
+}

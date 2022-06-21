@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="#">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Legitify</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container" style="width: 700px;">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="text-center"> Legitify</h1>
+          <hr/>
+          <br/>
+		 <a href="index.html">Index</a>
+<h6>Current Date and Time: <span id="time"></span> </h6>
+    
+
+  <form>
+              <div class="form-group">
+                <label for="newsSelect">Select News</label>
+                <select class="form-control" id="newsSelect">
+                </select>
+              </div>
+              <button type="submit" onclick= "App.upVote();" class="btn btn-primary">UpVote</button>
+		<button type="submit" onclick="App.downVote();" class="btn btn-primary">DownVote</button>
+		
+              <hr/>
+            </form>
+
+<script> 
+var datetime = new Date();
+document.getElementById("time").textContent = datetime; //it will print on html page
+
+</script>
+
+<form OnSubmit ="App.addNews();">
+              <div class="form-group">
+                <label for="news_item">Add news</label>
+                <input class="form-control" id="news_item">
+		</input>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+              <hr/>
+            </form>
+
+  <button type="submit" onclick = "App.addNewsAuto();" class="btn btn-primary"> Auto Add News </button>
+
+<form OnSubmit ="App.addAuditor();">
+              <div class="form-group">
+                <label for="address">Add another News Auditor node</label>
+                <input class="form-control" id="address">
+		</input>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+              <hr />
+            </form>
+
+            <p id="accountAddress" class="text-center"></p>
+    <p id="accountPoints" class="text-center"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+ 
+  </body>
+</html>
